@@ -1,0 +1,425 @@
+. {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'poppins', sans-serif;
+}
+
+body {
+    color: #ededed;
+}
+
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 80%;
+    padding: 20px 10%;
+    background: transparent;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+}
+
+.logo {
+    position: relative;
+    font-size: 50px;
+    color: #0ef;
+    text-decoration: none;
+    font-weight: 600;
+    cursor: default;
+    opacity: 0;
+    animation: slideRight 1s ease forwards;
+    animation-delay: 1s;
+}
+
+.navbar a {
+    display: inline-block;
+    font-size: 25px;
+    color: #fff;
+    text-decoration: none;
+    font-weight: 500;
+    margin-left: 35px;
+    transition: .3s;
+    opacity: 0;
+    animation: slideTop .5s ease forwards;
+    animation-delay: calc(.2s * var(--i));
+}
+
+.navbar a:hover {
+    color: #0ef;
+}
+
+.home {
+    position: relative;
+    width: 80%;
+    justify-content: space-between;
+    height: 90vh;
+    background: url(background.jpg) no-repeat;
+    background-size: 100%;
+    display: flex;
+    align-items: center;
+    padding: 70px 10% 0;
+}
+
+.home-content {
+    max-width: 700px;
+
+}
+
+.home-content h3 {
+    font-size: 32px;
+    font-weight: 700;
+    opacity: 0;
+    animation: slideBottom 1s ease forwards;
+    animation-delay: .7s;
+
+
+
+}
+
+.home-content h3:nth-of-type(2) {
+    margin-bottom: 30px;
+    animation: slideTop 1s ease forwards;
+    animation-delay: .7s;
+}
+
+.home-content h3 span {
+    color: #0ef;
+}
+
+.home-content h1 {
+    font-size: 56px;
+    font-weight: 700;
+    margin: -3px 0;
+    opacity: 0;
+    animation: slideRight 1s ease forwards;
+    animation-delay: 1s;
+
+
+}
+
+.home-content p {
+    font-size: 20px;
+    opacity: 0;
+    animation: slideLeft 1s ease forwards;
+    animation-delay: 1s;
+
+
+}
+
+.home-sci a {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    background: transparent;
+    border: 2px solid #0ef;
+    border-radius: 50%;
+    font-size: 20px;
+    color: #0ef;
+    text-decoration: none;
+
+    transition: .5s ease;
+    opacity: 0;
+    animation: slideLeft 1s ease forwards;
+    animation-delay: calc(.2s * var(--i));
+    margin: 30px 15px 30px 0;
+
+
+}
+
+.home-sci a:hover {
+    background: #0ef;
+    color: #081b29;
+    box-shadow: 0 0 20px #0ef;
+
+}
+
+
+
+@keyframes slideRight {
+    0% {
+        transform: translateX(-100px);
+        opacity: 0;
+    }
+
+    100% {
+        transform: translateX(0px);
+        opacity: 1;
+    }
+}
+
+@keyframes slideTop {
+    0% {
+        transform: translateY(100px);
+        opacity: 0;
+    }
+
+    100% {
+        transform: translateY(0px);
+        opacity: 1;
+    }
+}
+
+@keyframes slideBottom {
+    0% {
+        transform: translateX(-100px);
+        opacity: 0;
+    }
+
+    100% {
+        transform: translateX(0px);
+        opacity: 1;
+    }
+}
+
+@keyframes slideLeft {
+    0% {
+        transform: translateX(100px);
+        opacity: 0;
+    }
+
+    100% {
+        transform: translateX(0px);
+        opacity: 1;
+    }
+}
+.img{
+    display: block;
+    border: 50px;
+    border-radius: 150%;
+    border-color: black;
+    width: 160%;
+    height: 420PX;
+    
+
+    
+}
+.img{
+    box-shadow: 0 0 5px cyan,
+    0 0 25px cyan, 0 0 50px cyan,
+    0 0 100px cyan, 0 0 200px cyan
+}
+
+.font{
+    font-size: 100px;
+}
+.a{
+    position: relative;
+    width: 80%;
+    justify-content: space-between;
+    height: 90vh;
+    background: url(background.jpg) no-repeat;
+    background-size: 100%;
+    display: flex;
+    align-items: center;
+    padding: 70px 10% 0;
+
+}
+.home-a {
+    max-width: 700px;
+    background-color: #0ef;
+    color: black;
+
+}
+.home-a{
+    box-shadow: 0 0 5px cyan,
+    0 0 25px cyan, 0 0 50px cyan,
+    0 0 100px cyan, 0 0 200px cyan
+    
+
+}
+
+.home-a h3 {
+    font-size: 32px;
+    font-weight: 700;
+    opacity: 0;
+    animation: slideBottom 1s ease forwards;
+    animation-delay: .7s;
+
+
+
+}
+
+.home-a h3:nth-of-type(2) {
+    margin-bottom: 30px;
+    animation: slideTop 1s ease forwards;
+    animation-delay: .7s;
+}
+
+.home-a h3 span {
+    color: #0ef;
+}
+
+.home-a h1 {
+    font-size: 56px;
+    font-weight: 700;
+    margin: -3px 0;
+    opacity: 0;
+    animation: slideRight 1s ease forwards;
+    animation-delay: 1s;
+
+
+}
+
+.home-a p {
+    font-size: 35px;
+    opacity: 0;
+    animation: slideLeft 1s ease forwards;
+    animation-delay: 1s;
+
+
+}
+.b{
+    position: relative;
+    width: 80%;
+    justify-content: space-between;
+    height: 90vh;
+    background: url(background.jpg) no-repeat;
+    background-size: 100%;
+    display: flex;
+    align-items: center;
+    padding: 70px 10% 0;
+
+}
+.home-b {
+    max-width: 700px;
+    background-color: #0ef;
+    color: black;
+
+
+}
+
+.home-b h1 {
+    font-size: 56px;
+    font-weight: 700;
+    margin: -3px 0;
+    opacity: 0;
+    animation: slideRight 1s ease forwards;
+    animation-delay: 1s;
+
+
+}
+
+.home-b p {
+    font-size: 35px;
+    opacity: 0;
+    animation: slideLeft 1s ease forwards;
+    animation-delay: 1s;
+
+
+}
+.home-b{
+    box-shadow: 0 0 5px cyan,
+    0 0 25px cyan, 0 0 50px cyan,
+    0 0 100px cyan, 0 0 200px cyan
+    
+}
+.c{
+    position: relative;
+    width: 80%;
+    justify-content: space-between;
+    height: 90vh;
+    background: url(background.jpg) no-repeat;
+    background-size: 100%;
+    display: flex;
+    align-items: center;
+    padding: 70px 10% 0;
+
+}
+.home-c{
+     width: 800px;
+    height: 500px;
+    background-color: #0ef;
+    color: black;
+
+}
+.home-c{
+    box-shadow: 0 0 1px cyan,
+    0 0 25px cyan, 0 0 50px cyan,
+    0 0 100px cyan, 0 0 20px cyan
+    
+
+}
+
+.home-c h3 {
+    font-size: 32px;
+    font-weight: 700;
+    opacity: 0;
+    animation: slideBottom 1s ease forwards;
+    animation-delay: .7s;
+
+
+
+}
+
+.home-c h3:nth-of-type(2) {
+    margin-bottom: 30px;
+    animation: slideTop 1s ease forwards;
+    animation-delay: .7s;
+}
+
+.home-c h3 span {
+    color: #0ef;
+}
+
+.home-c h1 {
+    font-size: 56px;
+    font-weight: 700;
+    margin: -3px 0;
+    opacity: 0;
+    animation: slideRight 1s ease forwards;
+    animation-delay: 1s;
+
+
+}
+
+.home-c p {
+    font-size: 35px;
+    opacity: 0;
+    animation: slideLeft 1s ease forwards;
+    animation-delay: 1s;
+
+
+}
+.e{
+    font-size: 40px;
+}
+.f{
+    font-size: 40px;
+}
+.g{
+    font-size: 40px;
+}
+.h{
+    height: 100px;
+    width: 100px;
+    
+}
+.i:hover{
+    box-shadow: 0 0 1px rgb(0, 11, 11),
+    0 0 25px rgb(3, 0, 24), 0 0 50px rgb(36, 130, 4),
+    0 0 100px rgb(223, 12, 12), 0 0 200px rgb(255, 0, 132)
+}
+.i{
+    height: 40px;
+    width: 250px;
+    font-size: 20px;
+    background-color: rgb(144, 247, 17);
+}
+.name{
+    height: 40px;
+    width: 250px;
+}
+.email{
+    height: 40px;
+    width: 250px;
+
+}
+.message{
+    height: 40px;
+    width: 250px;
+}
